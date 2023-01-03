@@ -1,0 +1,136 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.search input {
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ccc;
+}
+
+.search input:hover {
+  border-color: #1ca819;
+}
+
+.search input:focus-visible {
+  outline: none;
+}
+
+.search button {
+  width: 20%;
+  border: none;
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  color: white;
+  cursor: pointer;
+  border-radius: 18px;
+
+  --borderWidth: 3px;
+  border-radius: 20px;
+  position: relative;
+
+  animation: animationGradient 3s ease alternate infinite;
+}
+
+.principal_title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+}
+
+.principal_title {
+  --borderWidth: 3px;
+  border-radius: var(--borderWidth);
+  position: relative;
+  background: #1d1f20;
+}
+
+.principal_title::after {
+  content: "";
+  height: calc(100% + var(--borderWidth) * 3);
+  width: calc(100% + var(--borderWidth) * 3);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  background-size: 300% 300%;
+  position: absolute;
+  z-index: -1;
+  border-radius: var(--borderWidth);
+  animation: animationGradient 3s ease alternate infinite;
+  
+}
+
+@keyframes animationGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.search button:hover {
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+}
+
+.github_logo a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  
+}
+

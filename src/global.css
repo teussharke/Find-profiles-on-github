@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    max-width: 900px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    
+}
